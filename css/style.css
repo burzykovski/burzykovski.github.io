@@ -1,0 +1,12 @@
+body {
+    background-color: #f0f8ff;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header h1, footer h3 {
+    font-family: 'DejaVu Sans';
+    color: red;
+}
