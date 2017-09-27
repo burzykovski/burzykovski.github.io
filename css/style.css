@@ -8,5 +8,5 @@ header, footer {
 
 header h1, footer h3 {
     font-family: 'DejaVu Sans';
-    color: red;
+    color: #ff00ff;
 }
