@@ -68,16 +68,32 @@ body, html {
 
 .tech-item {
   display: flex;
-  justify-content: space-around;
-  background-color: orange;
+  justify-content: center;
+  background-color: #EB6902;
   border-radius: 10px;
   box-shadow: 0 0 20px #000;
   width: 125px;
   height: 125px;
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+  margin-left: 10px;
+  margin-top: 10px; }
   .tech-item .anti-rotate {
-    transform: rotate(-45deg) translateY(25px); }
+    transform: rotate(-45deg) translateY(22px); }
   .tech-item i {
-    text-shadow: 2px 2px 4px #000000; }
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 80px; }
+
+.icon-text {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  padding: 0px;
+  margin: 0px; }
+
+.tech-item:hover .icon-text {
+  opacity: 1; }
+
+.tech-item:hover .devicon-photoshop-plain {
+  opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */
