@@ -1,43 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <title>Praca domowa nr 2</title>
+        <!-- Meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Michał Burzyński - Junior Front-End Developer"/>
+        <meta name="keyword" content="html, css, javascript, kurs, nauka"/>
+
+        <!-- Fonts Awesome -->
+        <script src="https://use.fontawesome.com/12dffdf5a2.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/style.css"/>
+
+        <!-- Title -->
+        <title>about_burzykovski</title>
     </head>
     <body>
-        <header>
-            <h1>THAT'S A HEADER, BRO!</h1>
-        </header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="row"></div>
 
-        <nav>
-            <hr/>
-            <a href="https://www.boardgamegeek.com/" target="_blank">BGG</a>
-            <a href="https://www.hltv.org/" target="_blank">HLTV</a>
-            <a href="https://www.github.com" target="_blank">GitHub</a>
-            <hr/>
+            <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1 class="navbar-brand">.burzykovski</h1>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">.main_page</a></li>
+                        <li><a href="#">.about_me</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">.my_projects <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Switcheroo</a></li>
+                                <li><a href="#">project no.1</a></li>
+                                <li><a href="#">project no.2</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">non front-end</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">.contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+            </div><!-- /.container-fluid -->
         </nav>
+        <div class="hero-header-background-photo flex-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-1">
+                        <h1 class="text-on-header text-right">Michał Burzyński</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <img class="photo-on-header img-responsive img-circle center-block" src="img/myphoto.jpg" alt="photo of burzykovski">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 col-sm-offset-7">
+                        <h1 class="text-on-header">Junior Front-End Developer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container about-me">
+            <div class="row">
+                <div class="col-xs-12 about-me">
+                    <h2>.about_me</h2>
+                    <p class="text-indentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit porttitor sodales.
+                        Nunc aliquet lobortis lectus eget sagittis. Cras congue eleifend felis. Nunc luctus leo et eros tempor pellentesque.
+                        Aliquam erat volutpat. Vestibulum semper, nisl maximus scelerisque placerat, dolor metus ornare tortor, nec laoreet purus nunc quis diam.</p>
+                    <p>Morbi facilisis ante sed odio fermentum, id consectetur elit vestibulum. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                        per inceptos himenaeos. Sed maximus efficitur mi, quis sollicitudin sem consectetur non. Etiam nec rutrum est. Duis felis leo, porttitor eget mi id,
+                        dapibus viverra tellus. Ut sit amet imperdiet neque. Sed non sem nibh. Etiam sodales sem pharetra arcu ornare, in pharetra odio semper.
+                        Sed laoreet eros a gravida hendrerit.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="text-right">#technologies</h2>
+                    <div class="tech-container">
+                        <span class="tech-item">
+                            <i class="fa fa-html5 fa-5x anti-rotate"></i>
+                        </span>
+                        <span class="tech-item">
+                            <i class="fa fa-css3 fa-5x anti-rotate"></i>
+                        </span>
+                        <span class="tech-item">
+                            <i class="fa fa-html5 fa-5x anti-rotate"></i>
+                        </span>
+                        <span class="tech-item">
+                            <i class="fa fa-html5 fa-5x anti-rotate"></i>
+                        </span>
+                    </div>
+                </div>
 
-        <section>
-            <article>
-                Everyday carry umami meditation bushwick biodiesel, leggings +1 pitchfork tacos glossier
-                activated charcoal quinoa keffiyeh taiyaki paleo. Helvetica four loko trust fund food truck.
-                Twee chillwave waistcoat, venmo direct trade crucifix jianbing coloring book selfies. Cornhole
-                selfies 8-bit listicle skateboard swag. 8-bit fam street art migas, cliche master cleanse prism
-                swag godard beard. Bespoke cray tousled, iPhone adaptogen mustache photo booth fam sustainable
-                irony pok pok PBR&B copper mug raclette health goth. Kitsch schlitz lo-fi helvetica, shabby chic
-                you probably haven't heard of them cronut air plant letterpress gentrify before they sold out polaroid
-                hell of quinoa. Paleo vegan truffaut raw denim semiotics typewriter +1 hell of. Scenester vape glossier,
-                seitan normcore man braid paleo freegan man bun venmo twee you probably haven't heard of them yuccie
-                shabby chic. Live-edge kitsch yr cold-pressed gastropub, tumeric vegan. Mlkshk craft beer banh mi
-                whatever hammock hella blue bottle pabst hot chicken etsy cray franzen artisan. Health goth wayfarers af,
-                palo santo microdosing taxidermy roof party dreamcatcher gochujang sartorial helvetica kogi gastropub.
-                Keffiyeh pug post-ironic banjo kogi. Poutine tofu man braid dreamcatcher.
-            </article>
+            </div>
         </section>
 
         <footer>
-            <hr/>
-            <h3>THAT'S A FOOTER, BRO!</h3>
+
         </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>
