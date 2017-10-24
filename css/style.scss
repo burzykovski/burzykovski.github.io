@@ -75,7 +75,7 @@ body, html {
 }
 
 .about-tech-container {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .about-me {
@@ -87,10 +87,8 @@ body, html {
   padding-left: 5px;
 }
 
-.learning-status-container {
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
+.tech-header {
+  margin-bottom: 30px;
 }
 
 .learned {
@@ -134,6 +132,7 @@ body, html {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  width: 100%;
 }
 
 .tech-item {
