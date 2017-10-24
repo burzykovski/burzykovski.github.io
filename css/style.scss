@@ -1,8 +1,4 @@
-$standard-font-size: 16px;
-$standard-padding: 10px;
-$standard-background-color: #333;
-$standard-font-color: #fff;
-$secondary-font-color: #9d9d9d;
+@import "variables.scss";
 
 body, html {
   font-size: $standard-font-size;
@@ -76,6 +72,10 @@ body, html {
 
 .about-tech-container {
   margin-bottom: 70px;
+}
+
+.about-tech-container::before {
+  @include anchor-fix();
 }
 
 .about-me {

@@ -1,0 +1,13 @@
+$standard-font-size: 16px;
+$standard-padding: 10px;
+$standard-background-color: #333;
+$standard-font-color: #fff;
+$secondary-font-color: #9d9d9d;
+
+@mixin anchor-fix() {
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden;
+}
