@@ -69,30 +69,70 @@ body, html {
 .tech-item {
   display: flex;
   justify-content: center;
-  background-color: #EB6902;
+  background-color: #0ABE01;
   border-radius: 10px;
   box-shadow: 0 0 20px #000;
   width: 125px;
   height: 125px;
   transform: rotate(45deg);
-  margin-left: 10px;
-  margin-top: 10px; }
+  margin-left: 15px;
+  margin-top: 15px; }
   .tech-item .anti-rotate {
     transform: rotate(-45deg) translateY(22px); }
   .tech-item i {
     text-shadow: 2px 2px 4px #000000;
     font-size: 80px; }
 
+.tech-not-learned {
+  background-color: #EB6902; }
+
+.devicon-html5-plain,
+.devicon-css3-plain,
+.devicon-sass-original,
+.devicon-bootstrap-plain,
+.devicon-git-plain,
+.devicon-github-plain,
+.devicon-javascript-plain,
+.devicon-jquery-plain,
+.devicon-nodejs-plain,
+.devicon-react-original,
+.devicon-wordpress-plain,
+.devicon-angularjs-plain,
+.devicon-linux-plain,
+.devicon-docker-plain,
+.devicon-gulp-plain,
+.devicon-photoshop-plain {
+  transition: 0.5s ease-out; }
+
 .icon-text {
   display: block;
   position: absolute;
+  font-size: 24px;
   opacity: 0;
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  transition: 0.5s ease-out;
+  text-shadow: 2px 2px 4px #000000; }
 
 .tech-item:hover .icon-text {
-  opacity: 1; }
+  opacity: 1;
+  transform: rotate(-45deg) translate(-35px, 30px); }
 
+.tech-item:hover .devicon-html5-plain,
+.tech-item:hover .devicon-css3-plain,
+.tech-item:hover .devicon-sass-original,
+.tech-item:hover .devicon-bootstrap-plain,
+.tech-item:hover .devicon-git-plain,
+.tech-item:hover .devicon-github-plain,
+.tech-item:hover .devicon-javascript-plain,
+.tech-item:hover .devicon-jquery-plain,
+.tech-item:hover .devicon-nodejs-plain,
+.tech-item:hover .devicon-react-original,
+.tech-item:hover .devicon-wordpress-plain,
+.tech-item:hover .devicon-angularjs-plain,
+.tech-item:hover .devicon-linux-plain,
+.tech-item:hover .devicon-docker-plain,
+.tech-item:hover .devicon-gulp-plain,
 .tech-item:hover .devicon-photoshop-plain {
   opacity: 0; }
 
