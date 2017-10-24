@@ -74,6 +74,10 @@ body, html {
   box-shadow: 0 0 15px #fff;
 }
 
+.about-tech-container {
+  margin-bottom: 60px;
+}
+
 .about-me {
   margin-bottom: 30px;
 }
@@ -214,4 +218,13 @@ body, html {
   .devicon-photoshop-plain {
     opacity: 0;
   }
+}
+
+.mid-background-photo {
+    background-image: url(../img/background2.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
 }
