@@ -32,14 +32,6 @@ body, html {
       font-size: 24px;
     }
   }
-
-  .dropdown-menu {
-    background-color: $standard-background-color;
-
-    a {
-      color: $standard-font-color;
-    }
-  }
 }
 
 .flex-container {
@@ -91,6 +83,47 @@ body, html {
   padding-left: 5px;
 }
 
+.learning-status-container {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.learned {
+  text-align: center;
+  float: right;
+  padding-right: 20px;
+}
+
+.learned::before {
+  content: "";
+  display: inline-block;
+  background-color: #0ABE01;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  vertical-align: -50%;
+}
+
+.work-in-progress {
+  text-align: center;
+  float: right;
+}
+
+.work-in-progress::before {
+  content: "";
+  display: inline-block;
+  background-color: #EB6902;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  vertical-align: -50%;
+}
+
 .tech-container {
   margin-top: 50px;
   display: flex;
@@ -103,7 +136,7 @@ body, html {
   display: flex;
   justify-content: center;
   background-color: #0ABE01;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 0 20px #000;
   width: 125px;
   height: 125px;
@@ -116,7 +149,7 @@ body, html {
   }
 
   i {
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 8px #000000;
     font-size: 80px;
   }
 }
