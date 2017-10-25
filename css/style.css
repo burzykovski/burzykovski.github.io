@@ -125,19 +125,6 @@ body, html {
     text-shadow: 2px 2px 8px #000000;
     font-size: 80px; }
 
-@media screen and (max-width: 768px) {
-  .tech-item {
-    width: 90px;
-    height: 90px;
-    margin-left: 0px;
-    margin-top: 0px; }
-    .tech-item i {
-      font-size: 50px;
-      margin-right: 5px;
-      margin-top: -3px; }
-    .tech-item .icon-text {
-      font-size: 16px;
-      margin-top: -20px; } }
 .tech-not-learned {
   background-color: #EB6902; }
 
@@ -191,6 +178,21 @@ body, html {
 .tech-item:hover .devicon-photoshop-plain {
   opacity: 0; }
 
+@media screen and (max-width: 768px) {
+  .tech-item {
+    width: 90px;
+    height: 90px;
+    margin-left: 0px;
+    margin-top: 0px; }
+    .tech-item i {
+      font-size: 50px;
+      margin-right: 5px;
+      margin-top: -3px; }
+    .tech-item .icon-text {
+      font-size: 16px; }
+    .tech-item:hover .icon-text {
+      opacity: 1;
+      transform: rotate(-90deg) translateX(-35px); } }
 .mid-background-photo {
   height: 500px; }
 
