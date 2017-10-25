@@ -90,7 +90,7 @@ body, html {
 
 @media screen and (max-width: 768px) {
   .tech-header {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -160,6 +160,26 @@ body, html {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .tech-item {
+    width: 90px;
+    height: 90px;
+    margin-left: 0px;
+    margin-top: 0px;
+
+    i {
+      font-size: 50px;
+      margin-right: 5px;
+      margin-top: -3px;
+    }
+
+    .icon-text {
+      font-size: $standard-font-size;
+      margin-top: -20px;
+    }
+  }
+}
+
 .tech-not-learned {
   background-color: #EB6902;
 }
@@ -226,6 +246,12 @@ body, html {
     height: 500px;
 }
 
+@media screen and (max-width: 768px) {
+  .mid-background-photo {
+    display:none;
+  }
+}
+
 .my-projects::before {
   @include anchor-fix();
 }
@@ -249,6 +275,12 @@ body, html {
 
 .bottom-background-photo {
   height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-background-photo {
+    display:none;
+  }
 }
 
 /* ##################### SLIDE ANIMATION ################### */
