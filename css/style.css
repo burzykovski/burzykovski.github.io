@@ -27,7 +27,8 @@ body, html {
   z-index: 1 !important; }
 
 .hero-header-background-photo {
-  height: 100vh; }
+  height: 100vh;
+  width: 100%; }
 
 .hero-header-box {
   z-index: 2; }
@@ -213,7 +214,10 @@ body, html {
 
 @media screen and (max-width: 992px) {
   .flex-row {
-    display: block; } }
+    display: block; }
+
+  .flex-row:nth-of-type(2) {
+    margin: 10px; } }
 .img-project {
   box-shadow: 5px 5px 20px #000; }
 
@@ -267,7 +271,31 @@ body, html {
 
   .contact-details {
     margin-top: 0px;
-    text-align: right; } }
+    text-align: right; }
+
+  .circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    border-radius: 50%;
+    list-style: none; }
+    .circle-container > * {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 75px;
+      height: 75px;
+      margin: -37.5px; }
+      .circle-container > *:nth-of-type(1) {
+        transform: rotate(15deg) translate(100px) rotate(-15deg); }
+      .circle-container > *:nth-of-type(2) {
+        transform: rotate(105deg) translate(100px) rotate(-105deg); }
+      .circle-container > *:nth-of-type(3) {
+        transform: rotate(195deg) translate(100px) rotate(-195deg); }
+      .circle-container > *:nth-of-type(4) {
+        transform: rotate(285deg) translate(100px) rotate(-285deg); } }
 .footer-background-photo {
   height: 250px; }
 
