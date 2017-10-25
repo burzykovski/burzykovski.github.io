@@ -301,8 +301,8 @@ body, html {
 
 @media screen and (max-width: 768px) {
   .footer-background-photo {
-    background-image: none;
-    background: #333;
+    background-image: none !important;
+    background: #333 !important;
     height: 50px; } }
 .footer-box {
   z-index: 2;
