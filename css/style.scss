@@ -46,6 +46,7 @@ body, html {
 .hero-header-box {
   z-index: 2;
 }
+
 .text-on-header {
   color: #fff;
   font-size: $standard-font-size*3.5;
@@ -271,6 +272,7 @@ body, html {
 @media screen and (max-width: 992px) {
   .flex-row {
     display: block;
+
   }
 }
 
@@ -289,6 +291,59 @@ body, html {
   }
 }
 
+.contact {
+  margin: 30px auto 60px auto;
+}
+
+.circle-container {
+  @include on-circle($item-count: 4, $circle-size: 300px, $item-size: 125px);
+  margin: 70px auto 40px auto;
+  border: solid 5px #EB6902;
+
+  img {
+    display: block;
+    max-width: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    border: solid 5px #EB6902;
+    transition: .15s;
+
+    &:hover,
+    &:active {
+      filter: grayscale(0);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin: auto auto 20px auto;
+  }
+
+  .contact-details {
+    margin-top: 0px;
+    text-align: right;
+  }
+}
+
+.footer-background-photo {
+  height: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-background-photo {
+    background-image: none;
+    background: $standard-background-color;
+    height: 50px;
+  }
+}
+
+.footer-box {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 /* ##################### SLIDE ANIMATION ################### */
 .slideanim {visibility:hidden;}
 .slide {
