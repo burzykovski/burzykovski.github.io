@@ -79,7 +79,7 @@ body, html {
   display: inline-block;
   background-color: #0ABE01;
   border-radius: 5px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 5px 5px 20px #000;
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
@@ -94,7 +94,7 @@ body, html {
   display: inline-block;
   background-color: #EB6902;
   border-radius: 5px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 5px 5px 20px #000;
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
@@ -113,7 +113,7 @@ body, html {
   justify-content: center;
   background-color: #0ABE01;
   border-radius: 15px;
-  box-shadow: 0 0 20px #000;
+  box-shadow: 5px 5px 20px #000;
   width: 125px;
   height: 125px;
   transform: rotate(45deg);
@@ -196,6 +196,9 @@ body, html {
 @media screen and (max-width: 992px) {
   .flex-row {
     display: block; } }
+.img-project {
+  box-shadow: 5px 5px 20px #000; }
+
 .bottom-background-photo {
   height: 500px; }
 
@@ -224,5 +227,55 @@ body, html {
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%); } }
+/* Hang */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px); } }
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0); }
+
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate; }
 
 /*# sourceMappingURL=style.css.map */
