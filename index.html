@@ -40,14 +40,14 @@
                         <li class="active"><a href="#main_page">.main_page</a></li>
                         <li><a href="#about_me">.about_me</a></li>
                         <li><a href="#my_projects">.my_projects</a></li>
-                        <li><a href="#">.contact</a></li>
+                        <li><a href="#contact">.contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
             </div><!-- /.container-fluid -->
         </nav>
-        <div class="hero-header-background-photo flex-container">
-            <div class="container">
+        <div class="hero-header-background-photo flex-container" data-parallax="scroll" data-image-src="img/background1.jpg">
+            <div class="container hero-header-box">
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-1">
                         <h1 class="text-on-header text-right">Michał Burzyński</h1>
@@ -66,7 +66,7 @@
             </div>
         </div>
         <section class="container about-tech-container" id="about_me">
-            <div class="row">
+            <div class="row slideanim">
                 <div class="col-xs-12 about-me">
                     <h2>.about_me</h2>
                     <p class="text-indentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit porttitor sodales.
@@ -79,7 +79,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row slideanim">
                 <div class="col-xs-12 tech-header" id="technologies">
                     <h2 class="text-right">.technologies</h2>
                     <span class="work-in-progress">&nbsp&nbspworks in progress</span>
@@ -155,14 +155,14 @@
                 </div>
             </div>
         </section>
-        <div class="mid-background-photo"></div>
+        <div class="mid-background-photo" data-parallax="scroll" data-image-src="img/background2.jpeg"></div>
         <section class="container my-projects" id="my_projects">
             <div class="row">
                 <div class="col-xs-12">
                     <h2>.my_projects</h2>
                 </div>
             </div>
-            <div class="row flex-row">
+            <div class="row flex-row slideanim">
                 <div class="col-md-6">
                     <img class="img-responsive" src="img/myproject1.png" alt="Switcheroo - projekt przygotowany w ramach kursu infoShare Academy"/>
                 </div>
@@ -173,7 +173,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row flex-row">
+            <div class="row flex-row slideanim">
                 <div class="col-md-6 col-md-push-6">
                     <img class="img-responsive" src="img/myproject2.png" alt="Project no.2"/>
                 </div>
@@ -185,7 +185,7 @@
                 </div>
 
             </div>
-            <div class="row flex-row">
+            <div class="row flex-row slideanim">
                 <div class="col-md-6">
                     <img class="img-responsive" src="img/myproject3.png" alt="Project no.3"/>
                 </div>
@@ -197,6 +197,14 @@
                 </div>
             </div>
         </section>
+        <div class="bottom-background-photo" data-parallax="scroll" data-image-src="img/background3.jpg"></div>
+        <section class="container contact" id="contact">
+
+
+
+
+        </section>
+
         <footer>
 
         </footer>
@@ -205,5 +213,46 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- PARALLAX EFFECT -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a").on('click', function(event) {
+
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              } // End if
+            });
+          })
+        </script>
+        <script>
+          $(window).scroll(function() {
+            $(".slideanim").each(function(){
+              var pos = $(this).offset().top;
+
+              var winTop = $(window).scrollTop();
+              if (pos < winTop + 600) {
+                $(this).addClass("slide");
+              }
+            });
+          });
+        </script>
     </body>
 </html>

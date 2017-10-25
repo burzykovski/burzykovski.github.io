@@ -23,13 +23,14 @@ body, html {
   align-items: center;
   margin-top: 30px; }
 
+.parallax-mirror {
+  z-index: 1 !important; }
+
 .hero-header-background-photo {
-  background-image: url(../img/background1.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh; }
+
+.hero-header-box {
+  z-index: 2; }
 
 .text-on-header {
   color: #fff;
@@ -178,12 +179,14 @@ body, html {
   opacity: 0; }
 
 .mid-background-photo {
-  background-image: url(../img/background2.jpeg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 500px; }
+
+.my-projects::before {
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden; }
 
 .flex-row {
   display: flex;
@@ -193,5 +196,33 @@ body, html {
 @media screen and (max-width: 992px) {
   .flex-row {
     display: block; } }
+.bottom-background-photo {
+  height: 500px; }
+
+/* ##################### SLIDE ANIMATION ################### */
+.slideanim {
+  visibility: hidden; }
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible; }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(50%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0%); } }
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%); } }
 
 /*# sourceMappingURL=style.css.map */
