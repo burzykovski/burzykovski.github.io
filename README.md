@@ -1,4 +1,4 @@
-## Michał Burzyński - my aWWWsome adventure
-   Strona powstała na potrzeby nauki na kursie infoShare Academy.  
-   Jest to moja przygoda tzw. "od zera do Junior Front-End Developera".    
-   [IPM.dev Project](http://www.imp-dev.jfdzw1.is-academy.pl)
+## Michał Burzyński - portfolio webpage
+   Strona jest zbiorem informacji o mnie oraz projektów przeze mnie zrealizowanych.
+
+Not finished yet! Work in progress!
