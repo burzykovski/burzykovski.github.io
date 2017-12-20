@@ -7,7 +7,6 @@ body, html {
   background-color: $standard-background-color;
 }
 
-
 .navbar {
   padding: $standard-padding 0px;
   letter-spacing: $standard-font-size/8;
@@ -39,6 +38,7 @@ body, html {
 .parallax-mirror {
   z-index: 1 !important;
 }
+
 .hero-header-background-photo {
   height: 100vh;
   width: 100%;
@@ -224,7 +224,6 @@ body, html {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .tech-item {
     width: 90px;
@@ -249,14 +248,13 @@ body, html {
   }
 }
 
-
 .mid-background-photo {
-    height: 500px;
+  height: 500px;
 }
 
 @media screen and (max-width: 768px) {
   .mid-background-photo {
-    display:none;
+    display: none;
   }
 }
 
@@ -283,14 +281,13 @@ body, html {
   box-shadow: 5px 5px 20px #000;
 }
 
-
 .bottom-background-photo {
   height: 500px;
 }
 
 @media screen and (max-width: 768px) {
   .bottom-background-photo {
-    display:none;
+    display: none;
   }
 }
 
@@ -352,8 +349,12 @@ body, html {
   align-items: center;
   position: relative;
 }
+
 /* ##################### SLIDE ANIMATION ################### */
-.slideanim {visibility:hidden;}
+.slideanim {
+  visibility: hidden;
+}
+
 .slide {
   animation-name: slide;
   -webkit-animation-name: slide;
@@ -372,6 +373,7 @@ body, html {
     transform: translateY(0%);
   }
 }
+
 @-webkit-keyframes slide {
   0% {
     opacity: 0;
@@ -398,6 +400,7 @@ body, html {
     transform: translateY(8px);
   }
 }
+
 @keyframes hvr-hang {
   0% {
     -webkit-transform: translateY(8px);
@@ -412,24 +415,28 @@ body, html {
     transform: translateY(8px);
   }
 }
+
 @-webkit-keyframes hvr-hang-sink {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
 }
+
 @keyframes hvr-hang-sink {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
 }
+
 .hvr-hang {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
 }
+
 .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
