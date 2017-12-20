@@ -114,21 +114,49 @@ body, html {
   vertical-align: -45%;
 }
 
-.work-in-progress {
+.learning {
   text-align: center;
   float: right;
+  padding-right: 20px;
 }
 
-.work-in-progress::before {
+.learning::before {
   content: "";
   display: inline-block;
-  background-color: #EB6902;
+  background-color: #FFD700;
   border-radius: 5px;
   box-shadow: 5px 5px 20px #000;
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
   vertical-align: -45%;
+}
+
+.not-learned {
+  text-align: center;
+  float: right;
+}
+
+.not-learned::before {
+  content: "";
+  display: inline-block;
+  background-color: #FF4500;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #000;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  vertical-align: -45%;
+}
+
+@media screen and (max-width: 492px) {
+  .learned,
+  .learning,
+  .not-learned {
+    margin: 10px;
+    float: left;
+    clear: left;
+  }
 }
 
 .tech-container {
@@ -163,7 +191,12 @@ body, html {
 }
 
 .tech-not-learned {
-  background-color: #EB6902;
+  background-color: #FF4500;
+}
+
+//
+.learning-right-now {
+  background-color: #FFD700;
 }
 
 .devicon-html5-plain,
@@ -298,14 +331,14 @@ body, html {
 .circle-container {
   @include on-circle($item-count: 4, $circle-size: 300px, $item-size: 125px);
   margin: 70px auto 40px auto;
-  border: solid 5px #EB6902;
+  border: solid 5px #FF4500;
 
   img {
     display: block;
     max-width: 100%;
     border-radius: 50%;
     filter: grayscale(100%);
-    border: solid 5px #EB6902;
+    border: solid 5px #FF4500;
     transition: .15s;
 
     &:hover,
