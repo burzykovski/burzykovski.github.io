@@ -1,0 +1,23 @@
+{
+  "name": "burzykovski.github.io",
+  "version": "1.0.0",
+  "description": "my portfolio webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass css/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burzykovski/burzykovski.github.io.git"
+  },
+  "author": "burzykovski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burzykovski/burzykovski.github.io/issues"
+  },
+  "homepage": "https://github.com/burzykovski/burzykovski.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

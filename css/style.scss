@@ -1,10 +1,22 @@
 @import "variables.scss";
 
-body, html {
+body,
+html {
   font-size: $standard-font-size;
   color: $standard-font-color;
   height: 100%;
   background-color: $standard-background-color;
+}
+
+.standard-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ff4500;
+
+  &:hover {
+    text-decoration: none;
+    color: #ff4500;
+  }
 }
 
 .navbar {
@@ -105,25 +117,7 @@ body, html {
 .learned::before {
   content: "";
   display: inline-block;
-  background-color: #0ABE01;
-  border-radius: 5px;
-  box-shadow: 5px 5px 20px #000;
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-  vertical-align: -45%;
-}
-
-.learning {
-  text-align: center;
-  float: right;
-  padding-right: 20px;
-}
-
-.learning::before {
-  content: "";
-  display: inline-block;
-  background-color: #FFD700;
+  background-color: #0abe01;
   border-radius: 5px;
   box-shadow: 5px 5px 20px #000;
   width: 30px;
@@ -140,7 +134,7 @@ body, html {
 .not-learned::before {
   content: "";
   display: inline-block;
-  background-color: #FF4500;
+  background-color: #ff4500;
   border-radius: 5px;
   box-shadow: 5px 5px 20px #000;
   width: 30px;
@@ -171,7 +165,7 @@ body, html {
 .tech-item {
   display: flex;
   justify-content: center;
-  background-color: #0ABE01;
+  background-color: #0abe01;
   border-radius: 15px;
   box-shadow: 5px 5px 20px #000;
   width: 125px;
@@ -191,12 +185,7 @@ body, html {
 }
 
 .tech-not-learned {
-  background-color: #FF4500;
-}
-
-//
-.learning-right-now {
-  background-color: #FFD700;
+  background-color: #ff4500;
 }
 
 .devicon-html5-plain,
@@ -214,7 +203,7 @@ body, html {
 .devicon-linux-plain,
 .devicon-docker-plain,
 .devicon-gulp-plain,
-.devicon-photoshop-plain {
+.devicon-babel-plain {
   transition: 0.5s ease-out;
 }
 
@@ -227,13 +216,11 @@ body, html {
   margin: 0px;
   transition: 0.5s ease-out;
   text-shadow: 2px 2px 4px #000000;
-
 }
 
 .tech-item:hover .icon-text {
   opacity: 1;
   transform: rotate(-45deg) translate(-35px, 30px);
-
 }
 
 .tech-item:hover {
@@ -252,7 +239,7 @@ body, html {
   .devicon-linux-plain,
   .devicon-docker-plain,
   .devicon-gulp-plain,
-  .devicon-photoshop-plain {
+  .devicon-babel-plain {
     opacity: 0;
   }
 }
@@ -331,15 +318,15 @@ body, html {
 .circle-container {
   @include on-circle($item-count: 4, $circle-size: 300px, $item-size: 125px);
   margin: 70px auto 40px auto;
-  border: solid 5px #FF4500;
+  border: solid 5px #ff4500;
 
   img {
     display: block;
     max-width: 100%;
     border-radius: 50%;
     filter: grayscale(100%);
-    border: solid 5px #FF4500;
-    transition: .15s;
+    border: solid 5px #ff4500;
+    transition: 0.15s;
 
     &:hover,
     &:active {
@@ -349,7 +336,6 @@ body, html {
 }
 
 @media screen and (max-width: 768px) {
-
   .contact {
     margin: auto auto 20px auto;
   }
@@ -470,13 +456,15 @@ body, html {
   transform: perspective(1px) translateZ(0);
 }
 
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+.hvr-hang:hover,
+.hvr-hang:focus,
+.hvr-hang:active {
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
   -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
   -webkit-animation-iteration-count: 1, infinite;

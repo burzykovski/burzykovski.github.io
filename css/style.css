@@ -1,8 +1,17 @@
-body, html {
+body,
+html {
   font-size: 16px;
   color: #fff;
   height: 100%;
   background-color: #333; }
+
+.standard-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ff4500; }
+  .standard-link:hover {
+    text-decoration: none;
+    color: #ff4500; }
 
 .navbar {
   padding: 10px 0px;
@@ -40,11 +49,13 @@ body, html {
 @media screen and (max-width: 1200px) {
   .text-on-header {
     font-size: 40px; } }
+
 @media screen and (max-width: 768px) {
   .text-on-header {
     text-align: center;
     padding: 40px 0px;
     margin: 0px; } }
+
 .photo-on-header {
   height: 25vh;
   border: 2px solid #fff;
@@ -70,6 +81,7 @@ body, html {
 @media screen and (max-width: 768px) {
   .tech-header {
     margin-bottom: 50px; } }
+
 .learned {
   text-align: center;
   float: right;
@@ -78,23 +90,7 @@ body, html {
 .learned::before {
   content: "";
   display: inline-block;
-  background-color: #0ABE01;
-  border-radius: 5px;
-  box-shadow: 5px 5px 20px #000;
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-  vertical-align: -45%; }
-
-.learning {
-  text-align: center;
-  float: right;
-  padding-right: 20px; }
-
-.learning::before {
-  content: "";
-  display: inline-block;
-  background-color: #FFD700;
+  background-color: #0abe01;
   border-radius: 5px;
   box-shadow: 5px 5px 20px #000;
   width: 30px;
@@ -109,7 +105,7 @@ body, html {
 .not-learned::before {
   content: "";
   display: inline-block;
-  background-color: #FF4500;
+  background-color: #ff4500;
   border-radius: 5px;
   box-shadow: 5px 5px 20px #000;
   width: 30px;
@@ -124,6 +120,7 @@ body, html {
     margin: 10px;
     float: left;
     clear: left; } }
+
 .tech-container {
   margin-top: 50px;
   display: flex;
@@ -135,7 +132,7 @@ body, html {
 .tech-item {
   display: flex;
   justify-content: center;
-  background-color: #0ABE01;
+  background-color: #0abe01;
   border-radius: 15px;
   box-shadow: 5px 5px 20px #000;
   width: 125px;
@@ -150,10 +147,7 @@ body, html {
     font-size: 80px; }
 
 .tech-not-learned {
-  background-color: #FF4500; }
-
-.learning-right-now {
-  background-color: #FFD700; }
+  background-color: #ff4500; }
 
 .devicon-html5-plain,
 .devicon-css3-plain,
@@ -170,7 +164,7 @@ body, html {
 .devicon-linux-plain,
 .devicon-docker-plain,
 .devicon-gulp-plain,
-.devicon-photoshop-plain {
+.devicon-babel-plain {
   transition: 0.5s ease-out; }
 
 .icon-text {
@@ -202,7 +196,7 @@ body, html {
 .tech-item:hover .devicon-linux-plain,
 .tech-item:hover .devicon-docker-plain,
 .tech-item:hover .devicon-gulp-plain,
-.tech-item:hover .devicon-photoshop-plain {
+.tech-item:hover .devicon-babel-plain {
   opacity: 0; }
 
 @media screen and (max-width: 768px) {
@@ -220,12 +214,14 @@ body, html {
     .tech-item:hover .icon-text {
       opacity: 1;
       transform: rotate(-90deg) translateX(-35px); } }
+
 .mid-background-photo {
   height: 500px; }
 
 @media screen and (max-width: 768px) {
   .mid-background-photo {
     display: none; } }
+
 .my-projects::before {
   display: block;
   content: " ";
@@ -241,9 +237,9 @@ body, html {
 @media screen and (max-width: 992px) {
   .flex-row {
     display: block; }
-
   .flex-row:nth-of-type(2) {
     margin: 10px; } }
+
 .img-project {
   box-shadow: 5px 5px 20px #000; }
 
@@ -253,6 +249,7 @@ body, html {
 @media screen and (max-width: 768px) {
   .bottom-background-photo {
     display: none; } }
+
 .contact {
   margin: 30px auto 60px auto; }
 
@@ -264,7 +261,7 @@ body, html {
   border-radius: 50%;
   list-style: none;
   margin: 70px auto 40px auto;
-  border: solid 5px #FF4500; }
+  border: solid 5px #ff4500; }
   .circle-container > * {
     display: block;
     position: absolute;
@@ -286,19 +283,17 @@ body, html {
     max-width: 100%;
     border-radius: 50%;
     filter: grayscale(100%);
-    border: solid 5px #FF4500;
-    transition: .15s; }
+    border: solid 5px #ff4500;
+    transition: 0.15s; }
     .circle-container img:hover, .circle-container img:active {
       filter: grayscale(0); }
 
 @media screen and (max-width: 768px) {
   .contact {
     margin: auto auto 20px auto; }
-
   .contact-details {
     margin-top: 0px;
     text-align: right; }
-
   .circle-container {
     position: relative;
     width: 200px;
@@ -322,6 +317,7 @@ body, html {
         transform: rotate(195deg) translate(100px) rotate(-195deg); }
       .circle-container > *:nth-of-type(4) {
         transform: rotate(285deg) translate(100px) rotate(-285deg); } }
+
 .footer-background-photo {
   height: 250px; }
 
@@ -330,6 +326,7 @@ body, html {
     background-image: none !important;
     background: #333 !important;
     height: 50px; } }
+
 .footer-box {
   z-index: 2;
   display: flex;
@@ -354,6 +351,7 @@ body, html {
   100% {
     opacity: 1;
     transform: translateY(0%); } }
+
 @-webkit-keyframes slide {
   0% {
     opacity: 0;
@@ -361,6 +359,7 @@ body, html {
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%); } }
+
 /* Hang */
 @-webkit-keyframes hvr-hang {
   0% {
@@ -372,6 +371,7 @@ body, html {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px); } }
+
 @keyframes hvr-hang {
   0% {
     -webkit-transform: translateY(8px);
@@ -382,27 +382,32 @@ body, html {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px); } }
+
 @-webkit-keyframes hvr-hang-sink {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px); } }
+
 @keyframes hvr-hang-sink {
   100% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px); } }
+
 .hvr-hang {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0); }
 
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+.hvr-hang:hover,
+.hvr-hang:focus,
+.hvr-hang:active {
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
   -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
   -webkit-animation-iteration-count: 1, infinite;
@@ -411,5 +416,3 @@ body, html {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate; }
-
-/*# sourceMappingURL=style.css.map */
