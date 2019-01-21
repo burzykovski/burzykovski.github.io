@@ -3,10 +3,14 @@ $standard-padding: 10px;
 $standard-background-color: #333;
 $standard-font-color: #fff;
 $secondary-font-color: #9d9d9d;
+$color-good: #0abe01;
+$color-decent: #ffff00;
+$color-basic: #ff4500;
+$tech-background-standard: #333;
 
 @mixin anchor-fix() {
   display: block;
-  content: " ";
+  content: ' ';
   margin-top: -70px;
   height: 70px;
   visibility: hidden;
@@ -34,7 +38,9 @@ $secondary-font-color: #9d9d9d;
 
     @for $i from 1 through $item-count {
       &:nth-of-type(#{$i}) {
-        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+        transform: rotate($rot * 1deg)
+          translate($circle-size / 2)
+          rotate($rot * -1deg);
       }
 
       $rot: $rot + $angle;

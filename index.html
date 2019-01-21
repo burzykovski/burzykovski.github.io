@@ -1,323 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Meta tags -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Michał Burzyński - Junior Front-End Developer" />
-    <meta name="keyword" content="html, css, javascript, kurs, nauka" />
+    <meta name="description" content="Michał Burzyński - Front-End Developer" />
+    <meta name="keyword" content="html, css, javascript, react, portfolio" />
 
     <!-- Devicon -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <!-- Title -->
     <title>about_burzykovski</title>
-</head>
+  </head>
 
-<body id="main_page" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <body id="main_page" data-spy="scroll" data-target=".navbar" data-offset="60">
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="row"></div>
+      <div class="container-fluid">
+        <div class="row"></div>
 
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <h1 class="navbar-brand">.burzykovski</h1>
-            </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1 class="navbar-brand">.burzykovski</h1>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#main_page">.main_page</a>
-                    </li>
-                    <li>
-                        <a href="#about_me">.about_me</a>
-                    </li>
-                    <li>
-                        <a href="#my_projects">.my_projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">.contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#main_page">.main_page</a></li>
+            <li><a href="#about_me">.about_me</a></li>
+            <li><a href="#my_projects">.my_projects</a></li>
+            <li><a href="#contact">.contact</a></li>
+          </ul>
         </div>
-        </div>
-        <!-- /.container-fluid -->
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
     </nav>
-    <div class="hero-header-background-photo flex-container" data-parallax="scroll" data-image-src="img/background1.jpg">
-        <div class="container hero-header-box">
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-1">
-                    <h1 class="text-on-header text-right">Michał Burzyński</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <img class="photo-on-header img-responsive img-circle center-block" src="img/myphoto.jpg" alt="photo of burzykovski">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-5 col-sm-offset-7">
-                    <h1 class="text-on-header">Junior Front-End Developer</h1>
-                </div>
-            </div>
+    <div
+      class="hero-header-background-photo flex-container"
+      data-parallax="scroll"
+      data-image-src="img/background1.jpg"
+    >
+      <div class="container hero-header-box">
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-1">
+            <h1 class="text-on-header text-right">Michał Burzyński</h1>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <img
+              class="photo-on-header img-responsive img-circle center-block"
+              src="img/myphoto.jpg"
+              alt="photo of burzykovski"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-7">
+            <h1 class="text-on-header">Front-End Developer</h1>
+          </div>
+        </div>
+      </div>
     </div>
     <section class="container about-tech-container" id="about_me">
-        <div class="row slideanim">
-            <div class="col-xs-12 about-me">
-                <h2>.about_me</h2>
-                <p class="text-indentation">On my way to become Junior Front-End Developer. I want to join your "special forces". Nothing is impossible
-                    for me, there are only things that I have not tried yet. I've been struggling for a long time to find
-                    my "hobby" for a living. Now I'm 100% certain. I want to be a programmer! </p>
-                <p>Contact me if you are looking for solid investment. Young, ambitious and an inquisitive programmer is right
-                    there!
-                </p>
-                <p>I am looking for my first job / internship as a Junior Front-End Developer in Warsaw. Type of employment
-                    contract, salary? A possibility of developing my skills and working in an awesome team are priorities
-                    for me, so we will get along somehow, right?</p>
-            </div>
+      <div class="row slideanim">
+        <div class="col-xs-12 about-me">
+          <h2>.about_me</h2>
+          <p class="text-indentation">
+            Constantly developing my front-end skills. I want to join your
+            "special forces". Nothing is impossible for me, there are only
+            things that I have not tried yet. I've been struggling for a long
+            time to find my "hobby" for a living. Now I'm 100% certain. Being a
+            front-end developer! That's it!
+          </p>
+          <p>
+            Contact me if you are looking for solid investment. Young, ambitious
+            and an inquisitive programmer is right there!
+          </p>
+          <p>
+            I am open for opportunities as Junior Front-End aspiring to being a
+            Regular. Type of employment contract, salary? A possibility of
+            developing my skills and working in an awesome team are my
+            priorities, so we will get along somehow, right?
+          </p>
         </div>
-        <div class="row slideanim">
-            <div class="col-xs-12 tech-header" id="technologies">
-                <h2 class="text-right">.technologies</h2>
-                <span class="not-learned">&nbsp&nbspwant to learn</span>
-                <span class="learned">&nbsp&nbsplearned</span>
-            </div>
-            <div class="col-sm-10 col-sm-offset-1">
-                <div class="tech-container">
-                    <span class="tech-item">
-                        <i class="devicon-html5-plain anti-rotate"></i>
-                        <span class="icon-text">HTML5</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-css3-plain anti-rotate"></i>
-                        <span class="icon-text">CSS3</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-javascript-plain anti-rotate"></i>
-                        <span class="icon-text">JavaScript</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-bootstrap-plain anti-rotate"></i>
-                        <span class="icon-text">Bootstrap</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-jquery-plain anti-rotate"></i>
-                        <span class="icon-text">jQuery</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-docker-plain anti-rotate"></i>
-                        <span class="icon-text">Docker</span>
-                    </span>
-                    <span class="tech-item tech-not-learned">
-                        <i class="devicon-nodejs-plain anti-rotate"></i>
-                        <span class="icon-text">Node.js</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-git-plain anti-rotate"></i>
-                        <span class="icon-text">Git</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-react-original anti-rotate"></i>
-                        <span class="icon-text">React</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-sass-original anti-rotate"></i>
-                        <span class="icon-text">SASS</span>
-                    </span>
-                    <span class="tech-item tech-not-learned">
-                        <i class="devicon-wordpress-plain anti-rotate"></i>
-                        <span class="icon-text">Wordpress</span>
-                    </span>
-                    <span class="tech-item tech-not-learned">
-                        <i class="devicon-angularjs-plain anti-rotate"></i>
-                        <span class="icon-text">Angular</span>
-                    </span>
-                    <span class="tech-item tech-not-learned">
-                        <i class="devicon-gulp-plain anti-rotate"></i>
-                        <span class="icon-text">Gulp</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-linux-plain anti-rotate"></i>
-                        <span class="icon-text">UNIX</span>
-                    </span>
-                    <span class="tech-item tech-not-learned">
-                        <i class="devicon-babel-plain anti-rotate"></i>
-                        <span class="icon-text">Babel</span>
-                    </span>
-                    <span class="tech-item">
-                        <i class="devicon-github-plain anti-rotate"></i>
-                        <span class="icon-text">GitHub</span>
-                    </span>
-                </div>
-            </div>
+      </div>
+      <div class="row slideanim">
+        <div class="col-xs-12 tech-header" id="technologies">
+          <h2 class="text-right">.technologies</h2>
+          <span class="tech-key-item basic-knowledge">basic knowledge</span>
+          <span class="tech-key-item decent-knowledge">decent knowledge</span>
+          <span class="tech-key-item good-knowledge">good knowledge</span>
         </div>
+        <div class="col-sm-10 col-sm-offset-1">
+          <div class="tech-container">
+            <span class="tech-item basic-knowledge">
+              <img class="anti-rotate" src="img/logos/babel.png" />
+              <span class="icon-text">Babel</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/css.png" />
+              <span class="icon-text">CSS3</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/git.png" />
+              <span class="icon-text">Git</span>
+            </span>
+            <span class="tech-item basic-knowledge">
+              <img class="anti-rotate" src="img/logos/graphql.png" />
+              <span class="icon-text">GraphQL</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/html.png" />
+              <span class="icon-text">HTML5</span>
+            </span>
+            <span class="tech-item decent-knowledge">
+              <img class="anti-rotate" src="img/logos/jest.png" />
+              <span class="icon-text">Jest</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/js.png" />
+              <span class="icon-text">JavaScript</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/lerna.png" />
+              <span class="icon-text">Lerna</span>
+            </span>
+            <span class="tech-item decent-knowledge">
+              <img class="anti-rotate" src="img/logos/nextjs.png" />
+              <span class="icon-text">NextJS</span>
+            </span>
+            <span class="tech-item basic-knowledge">
+              <img class="anti-rotate" src="img/logos/node.png" />
+              <span class="icon-text">NodeJS</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/npm.png" />
+              <span class="icon-text">Npm</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/react.png" />
+              <span class="icon-text">React</span>
+            </span>
+            <span class="tech-item decent-knowledge">
+              <img class="anti-rotate" src="img/logos/redux.png" />
+              <span class="icon-text">Redux</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/sass.png" />
+              <span class="icon-text">Sass/Scss</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/storybook.png" />
+              <span class="icon-text">Storybook</span>
+            </span>
+            <span class="tech-item good-knowledge">
+              <img class="anti-rotate" src="img/logos/styled.png" />
+              <span class="icon-text icon-text-long">Styled Components</span>
+            </span>
+            <span class="tech-item decent-knowledge">
+              <img class="anti-rotate" src="img/logos/ts.png" />
+              <span class="icon-text">TypeScript</span>
+            </span>
+            <span class="tech-item basic-knowledge">
+              <img class="anti-rotate" src="img/logos/vue.png" />
+              <span class="icon-text">VueJS</span>
+            </span>
+            <span class="tech-item basic-knowledge">
+              <img class="anti-rotate" src="img/logos/webpack.png" />
+              <span class="icon-text">Webpack</span>
+            </span>
+          </div>
+        </div>
+      </div>
     </section>
-    <div class="mid-background-photo" data-parallax="scroll" data-image-src="img/background2.jpg"></div>
+    <div
+      class="mid-background-photo"
+      data-parallax="scroll"
+      data-image-src="img/background2.jpg"
+    ></div>
     <section class="container my-projects" id="my_projects">
-        <div class="row slideanim">
-            <div class="col-xs-12">
-                <h2>.my_projects</h2>
-            </div>
+      <div class="row slideanim">
+        <div class="col-xs-12"><h2>.doing_right_now</h2></div>
+      </div>
+      <div class="row flex-row slideanim">
+        <div class="col-md-6">
+          <a
+            href="https://www.wp.pl"
+            target="_blank"
+          >
+            <img
+              class="img-responsive img-project hvr-hang"
+              src="img/wp.png"
+              alt="Wirtualna Polska"
+            />
+          </a>
         </div>
-        <div class="row flex-row slideanim">
-            <div class="col-md-6">
-                <a href="http://www.imp-dev.jfdzw1.is-academy.pl/" target="_blank">
-                    <img class="img-responsive img-project hvr-hang" src="img/switcheroo.png" alt="Switcheroo - projekt przygotowany w ramach kursu infoShare Academy"
-                    />
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h3>Switcheroo</h3>
-                <p>Project created on Junior Front-End Developer course in infoShare Academy in a team of three people. 
-                    The main goals of this project were: create landing page using HTML and CSS, create a game using JavaScript and jQuery and 
-                    create app using React + Redux. COMMENT: WORK IN PROGRESS (ESPECIALLY APP).
-                </p>
-            </div>
+        <div class="col-md-4">
+          <h3>Wirtualna Polska</h3>
+          <p>
+            Right now I'm working as Junior Front-End Developer in Grupa Wirtualna Polska.
+            Participation in designing and development of one of the biggest Polish web portals and other services belonging to company 
+            using the following technologies: React, Redux, JS(ES2017), Styled Components, Jest, Storybook, Babel, Webpack, Lerna, 
+            Yarn/Npm, Git, Next.js. Working in SCRUM model.
+          </p>
         </div>
-        <div class="row flex-row slideanim">
-            <div class="col-md-6 col-md-push-6">
-                <a href="https://burzykovski.github.io/budgetBuddyApp" target="_blank">
-                    <img class="img-responsive img-project hvr-hang" src="img/budget.png" alt="Budget Buddy App" />
-                </a>
-            </div>
-            <div class="col-md-4 col-md-offset-2 col-md-pull-6 text-right">
-                <h3>Budget Buddy</h3>
-                <p>App created using pure JavaScript (vanillaJS). It helps managing budget in particular month. Add incomes and
-                    expenses and see magic of calculations! It is also my first attempt to use a CSS Grid.
-                    App was created thanks to the knowledge from one of the Udemy courses.
-                </p>
-            </div>
-
+      </div>
+      <div class="row flex-row slideanim">
+        <div class="col-md-6 col-md-push-6 text-right">
+          <a
+            href="https://www.korepetycjapatrycja.pl"
+            target="_blank"
+          >
+            <img
+              class="img-responsive img-project hvr-hang"
+              src="img/korepetycjapatrycja.png"
+              alt="Korepetycja Patrycja"
+            />
+          </a>
         </div>
-        <div class="row flex-row slideanim">
-            <div class="col-md-6">
-                <a href="https://hackernews-burzykovski.herokuapp.com/" target="_blank">
-                    <img class="img-responsive img-project hvr-hang" src="img/hackernews.png" alt="Hacker News Project" />
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h3>Hacker News</h3>
-                <p>App created using React. Usage of external Hacker News API to fetch data. 
-                    It allows user to search threads, dismiss and sort them. It also caches results on client-side.
-                    App created thanks to knowledge from R.Wieruch book - "The Road to Learn React".
-                </p>
-            </div>
+        <div class="col-md-4 col-md-offset-2 col-md-pull-6 text-right">
+          <h3>Korepetycja Patrycja</h3>
+          <p>
+            Development and maintenance of several websites and landing pages belonging to my fiancee’s firm 
+            using WordPress, JavaScript, HTML and CSS, technical support. Working after hours.
+          </p>
         </div>
-        <div class="row flex-row slideanim">
-            <div class="col-md-6 col-md-push-6">
-                <a href="https://catchofthedayburzykovski.herokuapp.com" target="_blank">
-                    <img class="img-responsive img-project hvr-hang" src="img/catchoftheday.png" alt="Catch of the Day App" />
-                </a>
-            </div>
-            <div class="col-md-4 col-md-offset-2 col-md-pull-6 text-right">
-                <h3>Catch of the Day</h3>
-                <p>This app is one of my steps to learn React. App created thanks to knowledge from "React For Beginners" by Wes Bos.
-                    This project taught me a lot about about managing state, passing props, callbacks, preserving immutable data structures and routing.
-                    I've got opportunity to use CSS Transitions in React and Firebase for the first time - syncing databases, login authorization.
-                </p>
-            </div>
+      </div>
+      <div class="row flex-row slideanim">
+        <div class="col-md-6">
+          <a
+            href="https://github.com/burzykovski/fullstack-shop"
+            target="_blank"
+          >
+            <img
+              class="img-responsive img-project hvr-hang"
+              src="img/rightnow.png"
+              alt="Technologies - learning right now"
+            />
+          </a>
         </div>
-        <div class="row flex-row slideanim">
-            <div class="col-md-6">
-                    <a href="https://burzykovski.github.io/my_JavaScript30_challenge/index.html" target="_blank">
-                    <img class="img-responsive img-project hvr-hang" src="img/javascript30.png" alt="JavaScript30 Challenge" />
-                </a>
-            </div>
-            <div class="col-md-4">
-                    <h3>JavaScript 30 Coding Challenge</h3>
-                    <p>It's my attempt to Wes Bos's JavaScript 30 days Challenge. I'm in the middle of it, so this project is going
-                        to be updated regularly.
-                    </p>
-            </div>
+        <div class="col-md-4">
+          <h3>Learning</h3>
+          <p>
+            I believe that being a good front-end developer requires constant developing of skills. That's why
+             I'm trying to study as much as I can during my free time. On the one hand, I've started working on fullstack project with
+             advanced react and apollo client on frontend and yoga graphql + prisma on backend. 
+             On the other hand I'm learning TypeScript due to its growing position.
+          </p>
         </div>
+      </div>
+      <div class="row flex-row slideanim">
+        <div class="col-md-6 col-md-push-6 text-right">
+          <a
+            href="https://infoshareacademy.com/"
+            target="_blank"
+          >
+            <img
+              class="img-responsive img-project hvr-hang"
+              src="img/infoshare.png"
+              alt="Infoshare Academy"
+            />
+          </a>
+        </div>
+        <div class="col-md-4 col-md-offset-2 col-md-pull-6 text-right">
+          <h3>InfoShare Academy</h3>
+          <p>
+            From time to time I show up on Front-End Developer courses organized by InfoShare Academy in Warsaw as an
+            trainer's assistant. As a satisfied former student I decided to support this organization. It's a great opportunity
+            to meet interesting people, improve my knowledge and show courses participants that with hard work they can achieve their
+            goals and frontend can become their hobby for a living.
+          </p>
+        </div>
+      </div>
+      <div class="row slideanim">
+        <div class="col-xs-12">
+          <h2 class="text-right">.my_old_projects</h2>
+        </div>
+      </div>
+      <div class="row flex-row slideanim">
+        <div class="col-md-6 col-md-push-6 text-right">
+          <a
+            href="https://burzykovski.github.io/budgetBuddyApp"
+            target="_blank"
+          >
+            <img
+              class="img-responsive img-project hvr-hang"
+              src="img/budget.png"
+              alt="Budget Buddy App"
+            />
+          </a>
+        </div>
+        <div class="col-md-4 col-md-offset-2 col-md-pull-6 text-right">
+          <h3>Budget Buddy</h3>
+          <p>
+            App created using pure JavaScript (vanillaJS). It helps managing
+            budget in particular month. Add incomes and expenses and see magic
+            of calculations! It is also my first attempt to use a CSS Grid.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-row slideanim">
+        <div class="col-md-6">
+          <a
+            href="https://hackernews-burzykovski.herokuapp.com/"
+            target="_blank"
+          >
+            <img
+              class="img-responsive img-project hvr-hang"
+              src="img/hackernews.png"
+              alt="Hacker News Project"
+            />
+          </a>
+        </div>
+        <div class="col-md-4">
+          <h3>Hacker News</h3>
+          <p>
+            App created using React. Usage of external Hacker News API to fetch
+            data. It allows user to search threads, dismiss and sort them. It
+            also caches results on client-side. App created thanks to knowledge
+            from R.Wieruch book - "The Road to Learn React".
+          </p>
+        </div>
+      </div>
+      <div class="row flex-row slideanim">
+        <div class="col-md-6 col-md-push-6 text-right">
+          <a
+            href="https://catchofthedayburzykovski.herokuapp.com"
+            target="_blank"
+          >
+            <img
+              class="img-responsive img-project hvr-hang"
+              src="img/catchoftheday.png"
+              alt="Catch of the Day App"
+            />
+          </a>
+        </div>
+        <div class="col-md-4 col-md-offset-2 col-md-pull-6 text-right">
+          <h3>Catch of the Day</h3>
+          <p>
+            This app is one of my steps to learn React. App created thanks to
+            knowledge from "React For Beginners" by Wes Bos. This project taught
+            me a lot about about managing state, passing props, callbacks,
+            preserving immutable data structures and routing. I've got
+            opportunity to use CSS Transitions in React and Firebase for the
+            first time - syncing databases, login authorization.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-row slideanim">
+        <div class="col-md-6">
+          <a
+            href="https://github.com/burzykovski/burzykovski_wp"
+            target="_blank"
+          >
+            <img
+              class="img-responsive img-project hvr-hang"
+              src="img/unsplashysplash.png"
+              alt="Unsplashy Splash"
+            />
+          </a>
+        </div>
+        <div class="col-md-4">
+          <h3>Unsplashy Splash</h3>
+          <p>
+            Simple react app created as a recruitment task. It's a gallery of
+            images fetched from unsplash API. This app has 3 main views: overall
+            view of few galleries, view of particular gallery with images from
+            that gallery in a masonry layout with infinite scroll, view of
+            particular image with detailed info. Main obstacles: I configured
+            simple webpack from scratch, infinite scroll, masonry layout.
+          </p>
+        </div>
+      </div>
     </section>
-    <div class="bottom-background-photo" data-parallax="scroll" data-image-src="img/background3.jpg"></div>
+    <div
+      class="bottom-background-photo"
+      data-parallax="scroll"
+      data-image-src="img/background3.jpg"
+    ></div>
     <section class="container contact" id="contact">
-        <div class="row slideanim">
-            <div class="col-xs-12 text-right">
-                <h2>.contact</h2>
-            </div>
+      <div class="row slideanim">
+        <div class="col-xs-12 text-right"><h2>.contact</h2></div>
+      </div>
+      <div class="row flex-row contact-details slideanim">
+        <div class="col-sm-4">
+          <span> <strong>Email: </strong>mb.michalburzynski@gmail.com </span>
+          <br />
+          <span> <strong>Phone: </strong>+48 726 551 735 </span> <br />
+          <span> <strong>Localization: </strong>Warsaw, Poland </span> <br />
+          <span>
+            <strong>CV: </strong>
+            <a
+              class="standard-link"
+              href="https://www.dropbox.com/s/wskzugd719dtt5d/MICHAL_BURZYNSKI_CV.pdf?dl=0"
+              target="_blank"
+              >Download</a
+            >
+          </span>
         </div>
-        <div class="row flex-row contact-details slideanim">
-            <div class="col-sm-4">
-                <span>
-                    <strong>Email: </strong>mb.michalburzynski@gmail.com
-                </span>
-                <br>
-                <span>
-                    <strong>Phone: </strong>+48 726 551 735
-                </span>
-                <br>
-                <span>
-                    <strong>Localization: </strong>Warsaw, Poland
-                </span>
-                <br>
-                <span>
-                    <strong>CV: </strong>
-                    <a class="standard-link" href="https://www.dropbox.com/s/yrlt64oe83bbmz6/MICHA%C5%81_BURZY%C5%83SKI_CV.pdf?dl=0" target="_blank">Download</a>
-                </span>
-            </div>
-            <div class="col-sm-8">
-                <ul class="circle-container">
-                    <li>
-                        <a href="https://github.com/burzykovski" target="_blank">
-                            <img src="img/github-icon.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/burzykovski" target="_blank">
-                            <img src="img/facebook-icon.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/michal-burzynski/" target="_blank">
-                            <img src="img/linkedin-icon.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:mb.michalburzynski@gmail.com">
-                            <img src="img/gmail-icon.png">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="col-sm-8">
+          <ul class="circle-container">
+            <li>
+              <a href="https://github.com/burzykovski" target="_blank">
+                <img src="img/github-icon.jpg" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/burzykovski" target="_blank">
+                <img src="img/facebook-icon.png" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/michal-burzynski/"
+                target="_blank"
+              >
+                <img src="img/linkedin-icon.png" />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:mb.michalburzynski@gmail.com">
+                <img src="img/gmail-icon.png" />
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
-    <footer class="footer-background-photo footer-box" data-parallax="scroll" data-image-src="img/background4.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h4>copyright .burzykovski 2018</h4>
-                </div>
-            </div>
+    <footer
+      class="footer-background-photo footer-box"
+      data-parallax="scroll"
+      data-image-src="img/background4.jpg"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h4>
+              copyright .burzykovski
+              <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script>
+            </h4>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
     <!-- PARALLAX EFFECT -->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>

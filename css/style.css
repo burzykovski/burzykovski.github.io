@@ -3,7 +3,8 @@ html {
   font-size: 16px;
   color: #fff;
   height: 100%;
-  background-color: #333; }
+  background-color: #333;
+  scroll-behavior: smooth; }
 
 .standard-link {
   text-decoration: none;
@@ -66,7 +67,7 @@ html {
 
 .about-tech-container::before {
   display: block;
-  content: " ";
+  content: ' ';
   margin-top: -70px;
   height: 70px;
   visibility: hidden; }
@@ -82,41 +83,38 @@ html {
   .tech-header {
     margin-bottom: 50px; } }
 
-.learned {
+.good-knowledge,
+.good-knowledge::before {
+  border-color: #0abe01; }
+
+.decent-knowledge,
+.decent-knowledge::before {
+  border-color: #ffff00; }
+
+.basic-knowledge,
+.basic-knowledge::before {
+  border-color: #ff4500; }
+
+.tech-key-item {
   text-align: center;
   float: right;
   padding-right: 20px; }
-
-.learned::before {
-  content: "";
-  display: inline-block;
-  background-color: #0abe01;
-  border-radius: 5px;
-  box-shadow: 5px 5px 20px #000;
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-  vertical-align: -45%; }
-
-.not-learned {
-  text-align: center;
-  float: right; }
-
-.not-learned::before {
-  content: "";
-  display: inline-block;
-  background-color: #ff4500;
-  border-radius: 5px;
-  box-shadow: 5px 5px 20px #000;
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-  vertical-align: -45%; }
+  .tech-key-item::before {
+    content: '';
+    display: inline-block;
+    background-color: #333;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 5px 5px 20px #000;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    vertical-align: -45%;
+    margin-right: 12px; }
 
 @media screen and (max-width: 492px) {
-  .learned,
-  .learning,
-  .not-learned {
+  .tech-key-item {
     margin: 10px;
     float: left;
     clear: left; } }
@@ -129,47 +127,42 @@ html {
   justify-content: center;
   width: 100%; }
 
+.anti-rotate {
+  transform: rotate(-45deg) translate(-20px, 20px); }
+
+@media screen and (max-width: 768px) {
+  .anti-rotate {
+    transform: rotate(-45deg) translate(-15px, 15px); } }
+
 .tech-item {
   display: flex;
   justify-content: center;
-  background-color: #0abe01;
+  background-color: #333;
   border-radius: 15px;
+  border-style: solid;
+  border-width: 4px;
   box-shadow: 5px 5px 20px #000;
-  width: 125px;
-  height: 125px;
+  width: 140px;
+  height: 140px;
   transform: rotate(45deg);
   margin-left: 15px;
   margin-top: 15px; }
-  .tech-item .anti-rotate {
-    transform: rotate(-45deg) translateY(22px); }
-  .tech-item i {
-    text-shadow: 2px 2px 8px #000000;
-    font-size: 80px; }
-
-.tech-not-learned {
-  background-color: #ff4500; }
-
-.devicon-html5-plain,
-.devicon-css3-plain,
-.devicon-sass-original,
-.devicon-bootstrap-plain,
-.devicon-git-plain,
-.devicon-github-plain,
-.devicon-javascript-plain,
-.devicon-jquery-plain,
-.devicon-nodejs-plain,
-.devicon-react-original,
-.devicon-wordpress-plain,
-.devicon-angularjs-plain,
-.devicon-linux-plain,
-.devicon-docker-plain,
-.devicon-gulp-plain,
-.devicon-babel-plain {
-  transition: 0.5s ease-out; }
+  .tech-item img {
+    height: 80px;
+    width: 80px;
+    transition: 0.5s ease-out; }
+  .tech-item:hover img {
+    opacity: 0; }
+  .tech-item:hover .icon-text {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-35px, 33px); }
+  .tech-item:hover .icon-text-long {
+    transform: rotate(-45deg) translate(-25px, 19px); }
 
 .icon-text {
   display: block;
   position: absolute;
+  text-align: center;
   font-size: 24px;
   opacity: 0;
   padding: 0px;
@@ -177,43 +170,24 @@ html {
   transition: 0.5s ease-out;
   text-shadow: 2px 2px 4px #000000; }
 
-.tech-item:hover .icon-text {
-  opacity: 1;
-  transform: rotate(-45deg) translate(-35px, 30px); }
-
-.tech-item:hover .devicon-html5-plain,
-.tech-item:hover .devicon-css3-plain,
-.tech-item:hover .devicon-sass-original,
-.tech-item:hover .devicon-bootstrap-plain,
-.tech-item:hover .devicon-git-plain,
-.tech-item:hover .devicon-github-plain,
-.tech-item:hover .devicon-javascript-plain,
-.tech-item:hover .devicon-jquery-plain,
-.tech-item:hover .devicon-nodejs-plain,
-.tech-item:hover .devicon-react-original,
-.tech-item:hover .devicon-wordpress-plain,
-.tech-item:hover .devicon-angularjs-plain,
-.tech-item:hover .devicon-linux-plain,
-.tech-item:hover .devicon-docker-plain,
-.tech-item:hover .devicon-gulp-plain,
-.tech-item:hover .devicon-babel-plain {
-  opacity: 0; }
-
 @media screen and (max-width: 768px) {
   .tech-item {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     margin-left: 0px;
     margin-top: 0px; }
-    .tech-item i {
-      font-size: 50px;
-      margin-right: 5px;
-      margin-top: -3px; }
+    .tech-item img {
+      height: 50px;
+      width: 50px; }
     .tech-item .icon-text {
       font-size: 16px; }
+    .tech-item .icon-text-long {
+      font-size: 15px; }
     .tech-item:hover .icon-text {
       opacity: 1;
-      transform: rotate(-90deg) translateX(-35px); } }
+      transform: rotate(-90deg) translate(-35px, -3px); }
+    .tech-item:hover .icon-text-long {
+      transform: rotate(-90deg) translate(-25px, -3px); } }
 
 .mid-background-photo {
   height: 500px; }
@@ -224,7 +198,7 @@ html {
 
 .my-projects::before {
   display: block;
-  content: " ";
+  content: ' ';
   margin-top: -70px;
   height: 70px;
   visibility: hidden; }
